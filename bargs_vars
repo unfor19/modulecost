@@ -13,7 +13,7 @@ description=Branch name
 default=master
 ---
 name=bargs
-description=docker run -v $HOME/.aws/:/root/.aws/ --rm -e AWS_PROFILE=default unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc --module_dir_path examples/simple-vpc
+description=docker run -v $HOME/.aws/:/root/.aws/ --rm unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc --module_dir_path examples/simple-vpc
 default=irrelevant
 ---
 ---
