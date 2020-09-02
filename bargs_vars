@@ -1,0 +1,19 @@
+---
+name=github_repository
+short=gh
+description=GitHub repository URL
+---
+name=module_dir_path
+short=p
+description=infracost --tfdir
+---
+name=branch_name
+short=b
+description=Branch name
+default=master
+---
+name=bargs
+description=docker run -v $HOME/.aws/:/root/.aws/ --rm -e AWS_PROFILE=default unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc --module_dir_path examples/simple-vpc
+default=irrelevant
+---
+---
