@@ -28,7 +28,7 @@ docker run -v $HOME/.aws/:/root/.aws/ \
 Copy-Paste
 
 ```bash
-docker run -v $HOME/.aws/:/root/.aws/ -e AWS_PROFILE=default unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc --module_dir_path examples/simple-vpc
+docker run -v $HOME/.aws/:/root/.aws/ --rm -e AWS_PROFILE=default unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc --module_dir_path examples/simple-vpc
 ```
 
 ### Environment Variables
@@ -45,7 +45,7 @@ docker run \
 Copy-Paste
 
 ```bash
-docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN  --rm unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc -p examples/simple-vpc
+docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN --rm unfor19/modulecost --github_repository terraform-aws-modules/terraform-aws-vpc -p examples/simple-vpc
 ```
 
 ## Authors
